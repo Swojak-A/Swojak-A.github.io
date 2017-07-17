@@ -160,7 +160,17 @@ body {
 }
 }
 
+@media (min-width: 401px) and (max-width: 600px) {
+    h2 strong {
+        font-size: 50px;
+    }
+}
 
+@media (max-width: 400px) {
+    h2 strong {
+        font-size: 42px;
+    }
+}
 
 /* NAVBAR */
 
@@ -323,6 +333,7 @@ ul#head-ul li {
     width: calc(50% - 10px);
     padding-bottom: 0.5em;
     background-color: whitesmoke;
+    min-width:
 }
 
 .left {
@@ -334,11 +345,11 @@ ul#head-ul li {
     float: left;
 }
 
-.portfolio-sec {
+.portfolio-head {
     margin: 0.5em 1em;
 }
 
-.portfolio-sec a {
+.portfolio-head a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -361,8 +372,6 @@ ul#head-ul li {
 .al-right{
     text-align: right;
 }
-
-
 
 .portfolio-intersec {
     width: 20px;
