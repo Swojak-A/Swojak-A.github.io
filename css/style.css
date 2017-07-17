@@ -1,0 +1,472 @@
+/*borders for DEBUG*/
+
+/** {
+    border: 1px solid red !important;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+body { padding-top: 4.5em; }
+
+img, embed, object, video {
+    max-width: 100%
+}
+
+/* TYPOGRAPHY */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h1 small {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2 strong{
+    font-family: 'Rock Salt', 'Open Sans', sans-serif;
+/*    font-weight: 600;*/
+    font-size: 78px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+    color: gray;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+}
+
+
+/* GRID */
+
+.cont {
+    max-width: 1000px;
+    display: block;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+/*    overflow: hidden;*/
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* IE10+ styles*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+body {
+    background-color: green;
+}
+}
+
+
+
+/* NAVBAR */
+
+ul.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 2px  0px 3px -1px lightgray;
+    -ms-box-shadow: 2px  0px 3px -1px lightgray;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 100;
+}
+
+
+
+ul.navbar li {
+    float: right;
+}
+
+ul.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 1.5em 1em;
+    text-decoration: none;
+}
+
+ul.navbar li p {
+    display: block;
+    text-align: center;
+    padding: 1.5em 1em;
+    text-decoration: none;
+}
+
+ul.navbar li h1 {
+    display: block;
+    text-align: center;
+    padding: 1.5em 1em;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+ul.navbar .active {
+    text-decoration: underline;
+}
+
+/* HEAD */
+
+.head {
+}
+
+/* main */
+
+.head-main {
+    background-color: lightcyan;
+    text-align: center;
+    padding: 4em 1em 1em 4em;
+    margin-top: 3em;
+}
+
+.head-main p {
+    font-size: 22px;
+}
+
+.head-main hr {
+    display: block;
+    height: 1px;
+    width: 110%;
+    border: 0;
+    border-top: 5px solid black;
+    padding: 0;
+    transform: translate(20%, -20px);
+}
+
+ul#head-ul li {
+    display:inline;
+}
+
+/* gray rectangle on right side*/
+
+.gray-rect {
+/*    float: left;*/
+    background-color: whitesmoke;
+    width: 100%;
+    height: 320px;
+    transform: translate(0px, 100%);
+    position: relative;
+    z-index: -10;
+}
+
+/* INTERSECTION */
+
+.intersec {
+}
+
+.intersec hr {
+    margin: 4em 0%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px dotted black;
+    padding: 0;
+}
+
+/* BUTTONS */
+
+.button {
+    background-color: white;
+    border: 5px solid black;
+    width: 100%;
+    padding: 0.75em 3.5em;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: lightcyan;
+    text-decoration: underline;
+}
+
+/* SECTIONs & TEXT-BOXes */
+
+.section-1em {
+    margin: 1em 0em;
+}
+
+.section-2em {
+    margin: 2em 0em;
+}
+
+.section-3em {
+    margin: 3em 0em;
+}
+
+.section-4em {
+    margin: 4em 0em;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-box {
+    width: 100%;
+    padding: 1.5em 1.5em;
+    background-color: lightcyan;
+    border: 10px dotted black;
+    background-clip: padding-box;
+}
+
+.portfolio-card {
+    width: calc(50% - 10px);
+    padding-bottom: 0.5em;
+    background-color: whitesmoke;
+}
+
+.left {
+    float: right;
+    margin-right: 20px;
+}
+
+.right {
+    float: left;
+}
+
+.portfolio-sec {
+    margin: 0.5em 1em;
+}
+
+.portfolio-sec a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: darkcyan;
+}
+
+.portfolio-photo {
+}
+
+.portfolio-photo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.portfolio-text {
+    margin: 0.5em 1em;
+    min-height: 90px;
+}
+
+.al-right{
+    text-align: right;
+}
+
+
+
+.portfolio-intersec {
+    width: 20px;
+    height: 40px;
+}
+
+/* PROGRESS BAR */
+
+.bar-sec {
+    padding-right: 2em;
+    padding-left: 1em;
+    margin: 1em 0em;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.bar-label {
+    width: 33%;
+    height: 100%;
+    vertical-align: middle;
+    min-width: 190px;
+}
+
+.bar-bar {
+    width: 66%;
+    height: 100%;
+    padding-top: 11px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.progress {
+    height: 5px;
+    background-color: black;
+}
+
+.v75 {
+    width: 75%
+}
+
+.v50 {
+    width: 50%
+}
+
+.v25 {
+    width: 25%
+}
+
+.value {
+    height: 25px;
+    width: 50px;
+    padding-top: -2px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    transform: translate(-20px, -10px);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* CONTACT SECTION */
+
+.contact-sec h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact-sec p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.input {
+    margin: 0.5em 0em;
+    width: 100%;
+}
+
+.text-in {
+    height: 120px;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 3em;
+    background-color: black;
+    text-align: center;
+}
+
+.footer h3 {
+    padding: 1em 0em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+
