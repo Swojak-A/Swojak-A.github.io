@@ -150,27 +150,7 @@ p {
     width: 100%;
 }
 
-/* MEDIA QUERIES */
 
-/* IE10+ styles*/
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-body {
-    background-color: green;
-}
-}
-
-@media (min-width: 401px) and (max-width: 600px) {
-    h2 strong {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 400px) {
-    h2 strong {
-        font-size: 42px;
-    }
-}
 
 /* NAVBAR */
 
@@ -188,7 +168,9 @@ ul.navbar {
     z-index: 100;
 }
 
-
+ul.navbar li:nth-child(2) a{
+    padding-right: 30px;
+}
 
 ul.navbar li {
     float: right;
@@ -212,6 +194,7 @@ ul.navbar li h1 {
     display: block;
     text-align: center;
     padding: 1.5em 1em;
+    padding-left: 30px;
     text-decoration: none;
 }
 
@@ -241,6 +224,10 @@ ul.navbar .active {
     font-size: 22px;
 }
 
+ul#head-ul li {
+    display:inline;
+}
+
 .head-main hr {
     display: block;
     height: 1px;
@@ -251,9 +238,10 @@ ul.navbar .active {
     transform: translate(20%, -20px);
 }
 
-ul#head-ul li {
-    display:inline;
-}
+/* nie działa - nie wiem czemu */
+/*.head-main:last-child {
+    margin-top: 60px;
+}*/
 
 /* gray rectangle on right side*/
 
@@ -477,5 +465,193 @@ ul#head-ul li {
     font-weight: 300;
     font-size: 14px;
     color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* IE10+ styles*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ul.navbar {
+    border-bottom: 1px solid whitesmoke;
+}
+}
+
+@media (min-width: 951px) {
+    .nav-mobile {
+        display: none
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        display: none;
+    }
+    .nav-mobile{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 2px  0px 3px -1px lightgray;
+        -ms-box-shadow: 2px  0px 3px -1px lightgray;
+        list-style-type: none;
+        margin: 0;
+        padding: 0px 0px;
+        overflow: hidden;
+        background-color: white;
+        z-index: 100;
+}
+
+    ul.nav-mobile li:last-child a{
+        padding-right: 30px;
+    }
+
+    ul.nav-mobile li {
+        float: right;
+    }
+
+    ul.nav-mobile li h1 {
+        display: block;
+        text-align: center;
+        padding: 1.5em 1em;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+}
+
+
+@media (min-width: 451px) and (max-width: 600px) {
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%
+    }
+    .col-3 {
+        width: 100%
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-9 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 100%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    .head-main {
+        background-color: lightcyan;
+        text-align: center;
+        padding: 5em 1em 1em 1em;
+        margin-top: 0em;
+    }
+
+    .head-main hr {
+        display: block;
+        height: 1px;
+        width: 100%;
+        border: 0;
+        border-top: 5px solid black;
+        padding: 0;
+        transform: translate(0%, -20px);
+    }
+
+    .gray-rect {
+        display: none;
+    }
+
+    h2 strong {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%
+    }
+    .col-3 {
+        width: 100%
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-9 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 100%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    .head-main hr {
+        display: none;
+}
+
+    .head-main {
+        background-color: lightcyan;
+        text-align: center;
+        padding: 4em 1em 1em 1em;
+        margin-top: 0em;
+    }
+
+    .head-main hr {
+        display: block;
+        height: 1px;
+        width: 100%;
+        border: 0;
+        border-top: 5px solid black;
+        padding: 0;
+        transform: translate(0%, -10px);
+    }
+
+    .gray-rect {
+        display: none;
+    }
+
+    h1 small {
+        display: none;
+    }
+
+    h2 strong {
+        font-size: 42px;
+    }
 }
 
