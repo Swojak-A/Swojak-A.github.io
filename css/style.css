@@ -2,8 +2,8 @@
 
 /** {
     border: 1px solid red !important;
-}
-*/
+}*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -238,10 +238,6 @@ ul#head-ul li {
     transform: translate(20%, -20px);
 }
 
-/* nie działa - nie wiem czemu */
-/*.head-main:last-child {
-    margin-top: 60px;
-}*/
 
 /* gray rectangle on right side*/
 
@@ -321,7 +317,6 @@ ul#head-ul li {
     width: calc(50% - 10px);
     padding-bottom: 0.5em;
     background-color: whitesmoke;
-    min-width:
 }
 
 .left {
@@ -367,6 +362,14 @@ ul#head-ul li {
 }
 
 /* PROGRESS BAR */
+
+#skillset-desktop {
+    margin-top: 130px;
+}
+
+#skillset-mobile {
+    margin-bottom: 4em;
+}
 
 .bar-sec {
     padding-right: 2em;
@@ -451,7 +454,7 @@ ul#head-ul li {
     height: 120px;
 }
 
-/* footer */
+/* FOOTER */
 
 .footer {
     margin-top: 3em;
@@ -476,6 +479,8 @@ ul.navbar {
     border-bottom: 1px solid whitesmoke;
 }
 }
+
+/* navbar */
 
 @media (min-width: 951px) {
     .nav-mobile {
@@ -519,6 +524,14 @@ ul.navbar {
 
     ul.nav-mobile img {
         margin: 20px 30px;
+    }
+}
+
+/* responsiveness */
+
+@media (min-width: 601px) {
+    #skillset-mobile {
+        display: none;
     }
 }
 
@@ -582,6 +595,10 @@ ul.navbar {
         display: none;
     }
 
+    #skillset-desktop {
+        display: none;
+    }
+
     h2 strong {
         font-size: 50px;
     }
@@ -625,6 +642,14 @@ ul.navbar {
         width: 100%;
     }
 
+.section-3em {
+    margin: 2em 0em;
+}
+
+.section-4em {
+    margin: 2em 0em;
+}
+
     .head-main hr {
         display: none;
 }
@@ -650,12 +675,82 @@ ul.navbar {
         display: none;
     }
 
+    .flex {
+        display: inline;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        padding-bottom: 0.5em;
+        background-color: whitesmoke;
+    }
+
+    .left {
+        float: none;
+        margin-right: 0px;
+    }
+
+    .right {
+        float: none;
+        margin-top: 1em;
+    }
+
+    .bar-sec {
+        padding-right: 2em;
+        padding-left: 1em;
+        margin: 1em 0em;
+        width: 100%;
+        height: 34px;
+        display: inline;
+        overflow: hidden;
+    }
+
+    .bar-label {
+        width: 100%;
+        height: 34px;
+        vertical-align: middle;
+        min-width: 190px;
+        margin-top: 0.5em;
+    }
+
+    .bar-bar {
+        width: 100%;
+        height: 44px;
+        padding-top: 11px;
+    }
+
+    #skillset-desktop {
+        display: none;
+    }
+
+
+    * {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: black;
+    }
+
     h1 small {
         display: none;
     }
 
     h2 strong {
         font-size: 42px;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: black;
+    }
+
+    .portfolio-head a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: darkcyan;
     }
 }
 
