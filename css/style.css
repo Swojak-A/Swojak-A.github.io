@@ -516,6 +516,10 @@ ul.navbar {
         padding-left: 30px;
         text-decoration: none;
     }
+
+    ul.nav-mobile img {
+        margin: 16px 30px;
+    }
 }
 
 
