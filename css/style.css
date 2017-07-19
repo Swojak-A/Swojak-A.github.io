@@ -2,8 +2,8 @@
 
 /** {
     border: 1px solid red !important;
-}*/
-
+}
+*/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -518,7 +518,7 @@ ul.navbar {
     }
 
     ul.nav-mobile img {
-        margin: 16px 30px;
+        margin: 20px 30px;
     }
 }
 
