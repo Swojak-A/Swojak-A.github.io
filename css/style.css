@@ -51,7 +51,7 @@ h2 {
     font-size: 30px;
 }
 
-h2 strong{
+h2 strong {
     font-family: 'Rock Salt', 'Open Sans', sans-serif;
 /*    font-weight: 600;*/
     font-size: 78px;
@@ -236,6 +236,7 @@ ul#head-ul li {
     border-top: 5px solid black;
     padding: 0;
     transform: translate(20%, -20px);
+/*    transition: transform 2s linear 1s;*/
 }
 
 
@@ -249,6 +250,12 @@ ul#head-ul li {
     transform: translate(0px, 100%);
     position: relative;
     z-index: -10;
+    -webkit-transition: -webkit-transform 2s; /* Safari */
+    transition: transform 2s;
+}
+
+.gray-rect:onload {
+    transform: rotate(195deg);
 }
 
 /* INTERSECTION */
