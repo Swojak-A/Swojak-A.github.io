@@ -208,16 +208,24 @@ ul.navbar .active {
 
 /* HEAD */
 
-.head {
+.headanim {
+    z-index: -1;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-delay: 0s;
 }
 
 /* main */
 
 .head-main {
+    position: relative;
     background-color: lightcyan;
     text-align: center;
     padding: 4em 1em 1em 4em;
     margin-top: 3em;
+    animation-name: headmainanim;
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
 
 .head-main p {
@@ -229,6 +237,7 @@ ul#head-ul li {
 }
 
 .head-main hr {
+    position: relative;
     display: block;
     height: 1px;
     width: 110%;
@@ -236,22 +245,23 @@ ul#head-ul li {
     border-top: 5px solid black;
     padding: 0;
     transform: translate(20%, -20px);
-/*    transition: transform 2s linear 1s;*/
+    animation-name: hranim;
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
-
 
 /* gray rectangle on right side*/
 
 .gray-rect {
-/*    float: left;*/
     background-color: whitesmoke;
     width: 100%;
     height: 320px;
     transform: translate(0px, 100%);
     position: relative;
     z-index: -10;
-    -webkit-transition: -webkit-transform 2s; /* Safari */
-    transition: transform 2s;
+    animation-name: grayrectanim;
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
 
 .gray-rect:onload {
@@ -657,10 +667,6 @@ ul.navbar {
     margin: 2em 0em;
 }
 
-    .head-main hr {
-        display: none;
-}
-
     .head-main {
         background-color: lightcyan;
         text-align: center;
@@ -761,3 +767,26 @@ ul.navbar {
     }
 }
 
+/* animations */
+
+
+@keyframes hranim {
+    0%   {left:-400px; top:400px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes headmainanim {
+    0%      {left:0px; top:-400px;}
+    100%    {left:0px; top:0px;}
+}
+
+@keyframes grayrectanim {
+    0%      {left:400px; top:0px;}
+    100%    {left:0px; top:0px;}
+}
+
+@keyframes fadein {
+    0%    { opacity: 0 }
+    60%   { opacity: 0 }
+    100%   { opacity: 1 }
+}
