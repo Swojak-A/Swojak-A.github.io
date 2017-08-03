@@ -277,12 +277,7 @@ ul#head-ul li {
 
 /* INTERSECTION */
 
-.intersec-anim {
-    position: relative;
-    animation-name: fadein;
-    animation-duration: 6s;
-    animation-delay: 0s;
-}
+
 
 .intersec hr {
     margin: 4em 0%;
@@ -552,6 +547,12 @@ ul.navbar {
 
     ul.nav-mobile img {
         margin: 20px 30px;
+        width:36px;
+        height:36px;
+    }
+
+    ul.nav-mobile img:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -780,6 +781,24 @@ ul.navbar {
 
 /* animations */
 
+.start-fade-in1 {
+    position: relative;
+    animation-name: fadein;
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+
+/*.start-fade-in2 {
+    position: relative;
+    animation-name: fadein;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}*/
+
+.hideme {
+    position: relative;
+    opacity:0.2;
+}
 
 @keyframes hranim {
     0%   {left:-400px; top:400px;}
