@@ -211,7 +211,7 @@ ul.navbar .active {
 .headanim {
     z-index: -1;
     animation-name: fadein;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 0s;
 }
 
@@ -223,9 +223,12 @@ ul.navbar .active {
     text-align: center;
     padding: 4em 1em 1em 4em;
     margin-top: 3em;
+}
+
+.head-main {
     animation-name: headmainanim;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .head-main p {
@@ -245,9 +248,12 @@ ul#head-ul li {
     border-top: 5px solid black;
     padding: 0;
     transform: translate(20%, -20px);
+}
+
+.head-main hr {
     animation-name: hranim;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 /* gray rectangle on right side*/
@@ -259,18 +265,23 @@ ul#head-ul li {
     transform: translate(0px, 100%);
     position: relative;
     z-index: -10;
-    animation-name: grayrectanim;
-    animation-duration: 2s;
-    animation-delay: 2s;
+
 }
 
-.gray-rect:onload {
-    transform: rotate(195deg);
+
+.gray-rect {
+    animation-name: grayrectanim;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 /* INTERSECTION */
 
-.intersec {
+.intersec-anim {
+    position: relative;
+    animation-name: fadein;
+    animation-duration: 6s;
+    animation-delay: 0s;
 }
 
 .intersec hr {
