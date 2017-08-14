@@ -29,7 +29,9 @@ $(document).ready(function () {
     $(".v75").width(nullWidth + '%');
     $(".v50").width(nullWidth + '%');
     $(".v25").width(nullWidth + '%');
+    $(".value").css({ opacity: 0 });
 });
+var valueProgressBarAnimated = false;
 
 $(window).scroll(function () {
     /* Check the location of each desired element */
@@ -48,6 +50,44 @@ $(window).scroll(function () {
                 $(".v75").width('75%');
                 $(".v50").width('50%');
                 $(".v25").width('25%');
+
+                if ( valueProgressBarAnimated == false) {
+
+                    }
+
+                setTimeout(function(){
+                    if ( valueProgressBarAnimated == false) {
+                        $(".value").animate({
+                            'opacity': '1'
+                        }, 1000);
+                        $(".value").each( function() {
+                            var thisDiv = $(this);
+                            var percent = $(thisDiv).text().replace("%","");
+                            // console.log("test " + percent);
+
+                            function countToPercent(percent) {
+                                var interval = setInterval(counter,25);
+                                var n = 0;
+                                function counter() {
+                                    if (n >= percent) {
+                                        clearInterval(interval);
+                                        valueProgressBarAnimated = true;
+                                    }
+                                    else {
+                                        n += 1;
+                                        // console.log(n);
+                                        $(thisDiv).text(n + "%");
+                                    }
+                                }
+                            }
+
+                            countToPercent(percent);
+                        });
+                    }
+                }, 2000);
+
+
+
 
          }
      });
