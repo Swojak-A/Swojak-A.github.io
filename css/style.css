@@ -291,11 +291,13 @@ ul#head-ul li {
 /* BUTTONS */
 
 .button {
+    display: block;
     background-color: white;
     border: 5px solid black;
     width: 100%;
     padding: 0.75em 3.5em;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -305,6 +307,7 @@ ul#head-ul li {
     background-color: lightcyan;
     text-decoration: underline;
 }
+
 
 /* SECTIONs & TEXT-BOXes */
 
@@ -430,15 +433,20 @@ ul#head-ul li {
 }
 
 .v75 {
-    width: 75%
+    width: 75%;
 }
 
 .v50 {
-    width: 50%
+    width: 50%;
 }
 
 .v25 {
-    width: 25%
+    width: 25%;
+}
+
+.progress-bar-transistion {
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
 }
 
 .value {
@@ -501,13 +509,21 @@ ul#head-ul li {
 ul.navbar {
     border-bottom: 1px solid whitesmoke;
 }
+.mobile-nav-list {
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    }
 }
 
 /* navbar */
 
 @media (min-width: 951px) {
     .nav-mobile {
-        display: none
+        display: none;
+    }
+
+    mobile-nav-list {
+        display: none;
     }
 }
 
@@ -554,6 +570,19 @@ ul.navbar {
     ul.nav-mobile img:hover {
         transform: scale(1.1);
         transition: transform 0.2s;
+    }
+
+    .mobile-nav-list {
+        z-index: 120;
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        box-shadow: 0px  2px 3px -1px lightgray;
+        -ms-box-shadow: 0px  2px 3px -1px lightgray;
+        position: absolute;
+        position: fixed;
+        transform: translate(-200px, -64px);
+        transition: transform 0.3s ease-in;
     }
 }
 
@@ -672,13 +701,13 @@ ul.navbar {
         width: 100%;
     }
 
-.section-3em {
-    margin: 2em 0em;
-}
+    .section-3em {
+        margin: 2em 0em;
+    }
 
-.section-4em {
-    margin: 2em 0em;
-}
+    .section-4em {
+        margin: 2em 0em;
+    }
 
     .head-main {
         background-color: lightcyan;
