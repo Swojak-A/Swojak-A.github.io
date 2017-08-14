@@ -1,3 +1,14 @@
+// sidenav open
+
+$(document).ready(function () {
+    $("#navbar-opener").click(function() {
+        $("#sidebar").addClass("sidebar-active");
+        console.log("navbar-opener success");
+    });
+});
+
+
+
 // hidden elements - opacity from 0 to 1
 
 $(document).ready(function () {
@@ -22,7 +33,7 @@ $(window).scroll(function () {
      });
 });
 
-//
+// progress bars animations
 
 var nullWidth = 0;
 $(document).ready(function () {
@@ -37,7 +48,7 @@ $(window).scroll(function () {
     /* Check the location of each desired element */
     $('#skillset-section').each(function (i) {
 
-        var bottom_of_object = $(this).offset().top + (0.5 * $(this).outerHeight());
+        var bottom_of_object = $(this).offset().top + (0.25 * $(this).outerHeight());
         var bottom_of_window = $(window).scrollTop() + $(window).height();
 
         /* If the object is completely visible in the window, fade it in */
@@ -86,9 +97,6 @@ $(window).scroll(function () {
                         });
                     }
                 }, 2000);
-
-
-
 
          }
      });

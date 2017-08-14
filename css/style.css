@@ -511,7 +511,7 @@ ul#head-ul li {
 ul.navbar {
     border-bottom: 1px solid whitesmoke;
 }
-.mobile-nav-list {
+.mobile-sidebar {
     border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke;
     }
@@ -524,7 +524,7 @@ ul.navbar {
         display: none;
     }
 
-    mobile-nav-list {
+    .mobile-sidebar {
         display: none;
     }
 }
@@ -574,19 +574,37 @@ ul.navbar {
         transition: transform 0.2s;
     }
 
-    .mobile-nav-list {
+/*    .mobile-sidebar {
         z-index: 120;
         width: 300px;
         height: 100%;
         background-color: white;
         box-shadow: 0px  2px 3px -1px lightgray;
         -ms-box-shadow: 0px  2px 3px -1px lightgray;
-        position: absolute;
         position: fixed;
-        transform: translate(-200px, -64px);
+        transform: translate(200px, -64px);
         transition: transform 0.3s ease-in;
+    }*/
+
+    .mobile-sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 150;
+        top: 0;
+        right: 0;
+        box-shadow: 0px  2px 3px -1px lightgray;
+        -ms-box-shadow: 0px  2px 3px -1px lightgray;
+        background-color: white;
+        overflow-x: hidden;
+        transition: width 0.5s ease-out;
+        padding-top: 60px;
     }
 }
+
+    .sidebar-active {
+        width: 250px;
+    }
 
 /* responsiveness */
 
@@ -813,10 +831,10 @@ ul.navbar {
 
 /* animations */
 
-.start-fade-in1 {
+.first-intersec-anim {
     position: relative;
     animation-name: fadein;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-delay: 0s;
 }
 
