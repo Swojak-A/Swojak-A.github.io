@@ -461,7 +461,9 @@ ul#head-ul li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    color: #000000;
+    color: black;
+    -webkit-transition: color 0.2s linear;  Safari
+    transition: width 0.2s linear;
 }
 
 /* CONTACT SECTION */

@@ -29,7 +29,7 @@ $(document).ready(function () {
     $(".v75").width(nullWidth + '%');
     $(".v50").width(nullWidth + '%');
     $(".v25").width(nullWidth + '%');
-    $(".value").css({ opacity: 0 });
+    $(".value").css({ "color": "white" });
 });
 var valueProgressBarAnimated = false;
 
@@ -51,11 +51,12 @@ $(window).scroll(function () {
                 $(".v50").width('50%');
                 $(".v25").width('25%');
 
-                if ( valueProgressBarAnimated == false) {
-
-                    }
+                // if ( valueProgressBarAnimated == false) {
+                //     $(".value").css({ "color": "black" });
+                //     }
 
                 setTimeout(function(){
+                    $(".value").css({ "color": "black" });
                     if ( valueProgressBarAnimated == false) {
                         $(".value").animate({
                             'opacity': '1'
