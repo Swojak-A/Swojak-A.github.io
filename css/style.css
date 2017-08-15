@@ -154,6 +154,8 @@ p {
 
 /* NAVBAR */
 
+/* anchor 1 */
+
 ul.navbar {
     position: fixed;
     top: 0;
@@ -565,26 +567,19 @@ ul.navbar {
 
     ul.nav-mobile img {
         margin: 20px 30px;
+    }
+
+    .nav-icon {
         width:36px;
         height:36px;
     }
 
-    ul.nav-mobile img:hover {
+    .nav-icon:hover {
         transform: scale(1.1);
         transition: transform 0.2s;
     }
 
-/*    .mobile-sidebar {
-        z-index: 120;
-        width: 300px;
-        height: 100%;
-        background-color: white;
-        box-shadow: 0px  2px 3px -1px lightgray;
-        -ms-box-shadow: 0px  2px 3px -1px lightgray;
-        position: fixed;
-        transform: translate(200px, -64px);
-        transition: transform 0.3s ease-in;
-    }*/
+/* anchor 2 */
 
     .mobile-sidebar {
         height: 100%;
@@ -598,13 +593,47 @@ ul.navbar {
         background-color: white;
         overflow-x: hidden;
         transition: width 0.5s ease-out;
-        padding-top: 60px;
+        padding-top: 0px;
     }
-}
 
     .sidebar-active {
         width: 250px;
     }
+
+    .mobile-sidebar img {
+        position: absolute;
+        right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-sidebar ul{
+        margin-top: 82px;
+        margin-left: 20px;
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .mobile-sidebar ul li{
+        padding-bottom: 1em;
+    }
+
+    .mobile-sidebar ul li a {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .mobile-sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .mobile-sidebar ul li a .active {
+    text-decoration: underline;
+    }
+}
 
 /* responsiveness */
 

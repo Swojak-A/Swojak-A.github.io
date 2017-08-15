@@ -7,7 +7,12 @@ $(document).ready(function () {
     });
 });
 
-
+$(document).ready(function () {
+    $("#navbar-closer").click(function() {
+        $("#sidebar").removeClass("sidebar-active");
+        console.log("navbar-opener success");
+    });
+});
 
 // hidden elements - opacity from 0 to 1
 
