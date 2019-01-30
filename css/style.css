@@ -367,9 +367,13 @@ ul#head-ul li {
     color: darkcyan;
 }
 
-.portfolio-photo {
+.portfolio-head p {
+    color: gray;
 }
 
+.portfolio-photo {
+}
+f
 .portfolio-photo {
     max-height: 100%;
     max-width: 100%;
@@ -378,6 +382,11 @@ ul#head-ul li {
 .portfolio-text {
     margin: 0.5em 1em;
     min-height: 90px;
+}
+
+.portfolio-text a {
+    font-weight: inherit;
+    color: darkcyan;fport
 }
 
 .al-right{
