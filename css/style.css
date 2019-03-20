@@ -498,6 +498,31 @@ f
     height: 120px;
 }
 
+.contact-opt {
+    text-align: center;
+}
+
+.contact-opt a {
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.contact-opt a:hover {
+    background-color: lightcyan;
+}
+
+.contact-opt a i {
+    color: white;
+    margin-top: 0.4em;
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -865,7 +890,16 @@ ul.navbar {
         font-size: 14px;
         color: darkcyan;
     }
+
+    .contact-opt a i {
+        color: white;
+        margin-top: 0.65em;
+    }
 }
+
+
+
+
 
 /* animations */
 
