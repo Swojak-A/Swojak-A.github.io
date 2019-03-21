@@ -106,3 +106,18 @@ $(window).scroll(function () {
          }
      });
 });
+
+// modals
+
+$(document).ready(function() {
+
+  $("#o-la-paintings-btn").on("click", function() {
+    $("#modal-o-la-paintings").show();
+  });
+
+  $(".close").on("click", function() {
+    $("#modal-o-la-paintings").hide();
+  });
+
+});
+
