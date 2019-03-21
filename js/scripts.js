@@ -121,3 +121,14 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
+
+  $("#rumble-btn").on("click", function() {
+    $("#modal-rumble").show();
+  });
+
+  $(".close").on("click", function() {
+    $("#modal-rumble").hide();
+  });
+
+});
