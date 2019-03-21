@@ -942,3 +942,9 @@ ul.navbar {
     60%   { opacity: 0 }
     100%   { opacity: 1 }
 }
+
+/* smooth scrolling - without it jumping to section will be jagged */
+
+body {
+  scroll-behavior: smooth;
+}
